@@ -1,0 +1,54 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: @fregular;
+	font-size: 14px;
+	overflow-x: hidden;
+}
+
+img {
+	display: block;
+}
+
+.container {
+	margin: 0 auto;
+
+	overflow: hidden;
+
+	@media @extrasmall {
+		width: @xs;
+	}
+
+	@media @small {
+		width: @sm;
+	}
+
+	@media @medium {
+		width: @md;
+	}
+
+	@media @large {
+		width: @lg;
+	}
+}
+
+.wrapper {
+	padding: 0 100px;
+
+	@media @extrasmall {
+		padding: 0;
+	}
+}
+
+input:focus,
+button:focus {
+	outline: none;
+}

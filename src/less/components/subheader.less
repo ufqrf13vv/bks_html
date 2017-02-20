@@ -1,0 +1,56 @@
+.subheader {
+	height: 100px;
+	background: url('../img/bg-top.png') no-repeat 0 0;
+	background-size: cover;
+
+	@media @extrasmall {
+		height: auto;
+	}
+
+	&__wrapper {
+		display: flex;
+
+		@media @small {
+			height: 100px;
+		}
+	}
+
+	&__triangle {
+		background: url('../img/bg-triangle.png') no-repeat 0 0;
+		height: 100px;
+		width: 312px;
+
+		margin-left: 30px;
+
+		@media @medium {
+			display: block;
+		}
+
+		@media @small {
+			display: none;
+		}
+
+		@media @extrasmall {
+			display: none;
+		}
+	}
+
+	&__title {
+		align-self: center;
+		font-family: @fbold;
+		font-size: 30px;
+		color: #ffffff;
+
+		@media @medium {
+			margin: 0;
+		}
+
+		@media @small {
+			margin: auto;
+		}
+
+		@media @extrasmall {
+			text-align: center;
+		}
+	}
+}

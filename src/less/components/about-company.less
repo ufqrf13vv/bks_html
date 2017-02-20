@@ -1,0 +1,38 @@
+.about-company {
+	background: url('../img/bg-about.png') repeat 0 0;
+
+	&__wrapper {
+		display: flex;
+	}
+
+	&__image {
+		margin-right: 20px;
+
+		@media @medium {
+			display: block;
+		}
+
+		@media @small {
+			display: none;
+		}
+
+		@media @extrasmall {
+			display: none;
+		}
+	}
+
+	&__logo {
+
+		@media @large {
+			padding: 42px 0;
+		}
+
+		@media @medium {
+			padding: 22px 0;
+		}
+	}
+
+	&__text {
+		line-height: 24px;
+	}
+}

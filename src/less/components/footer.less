@@ -1,0 +1,35 @@
+.footer {
+	background: #000;
+
+	font-family: @fbold;
+
+	text-transform: uppercase;
+	text-align: center;
+
+	color: #fff;
+
+	position: relative;
+
+	@media @small {
+		padding: 28px 0;
+	}
+
+	@media @extrasmall {
+		padding: 10px 0;
+	}
+
+	&__logo {
+		position: absolute;
+		top: 8px;
+		margin-bottom: 15px;
+
+		@media @extrasmall {
+			position: relative;
+			top: 0;
+
+			& > img {
+				margin: auto;
+			}
+		}
+	}
+}

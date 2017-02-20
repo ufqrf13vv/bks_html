@@ -1,0 +1,300 @@
+doctype html
+html
+	head
+		meta(charset='UTF-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title BKS
+
+		link(rel='stylesheet', href='css/normalize.css')
+		link(rel='stylesheet', href='fonts/font-awesome-4.7.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='slick/slick.css')
+		link(rel='stylesheet', href='slick/slick-theme.css')
+		link(rel='stylesheet', href='css/style.css')
+
+		script(src="script/jquery-2.2.0.js", type="text/javascript")
+		script(src="slick/slick.min.js", type="text/javascript")
+		script(src="script/scripts.js", type="text/javascript")
+
+	body
+		.container
+			header.header
+				.header__wrapper
+					a.header__logo(href="/")
+						img(src="img/icons/logo.svg")
+
+					nav.main-nav
+						.main-nav__block
+							button.main-nav__burger.fa.fa-bars
+						ul.main-nav__list
+							li.main-nav__item
+								a.main-nav__link(href="#") О компании
+							li.main-nav__item
+								a.main-nav__link(href="#") О продукте
+							li.main-nav__item
+								a.main-nav__link(href="#") Галерея
+							li.main-nav__item
+								a.main-nav__link(href="#") Сертификаты
+							li.main-nav__item
+								a.main-nav__link(href="#") Контакты
+
+					.header__contacts
+						.header__contacts-adress СПб. Пр. Просвещения, д.34
+						.header__contacts-phone
+							i.fa.fa-phone
+							span +7 (812) 930 65 20
+
+		.subheader
+			.container
+				.subheader__wrapper
+					.subheader__triangle
+					.subheader__title Безрамное остекление в России
+
+
+		.main-slider
+			.main-slider__wrapper
+				.main-slider__slide
+					.container
+						.wrapper
+							.main-slider__logo
+								img(src="img/jokko-logo.png")
+							.main-slider__title Безрамная финская система
+							.main-slider__text Компания БКС является официальным дистрибьютором и представителем профиля Jokke на розничном рынке России
+							.container
+								.main-slider__image
+									img(src="img/sliders/pic1.png")
+
+				.main-slider__slide
+					.container
+						.wrapper
+							.main-slider__logo
+								img(src="img/bks-logo.png")
+							.main-slider__title Безрамная турецкая система
+							.main-slider__text Компания БКС - Единственный переработчик оригинального профиля
+							.container
+								.main-slider__image
+									img(src="img/sliders/pic2.png")
+			.container
+				.wrapper
+					.main-slider__features
+						.main-slider__feature
+							.main-slider__feature-image
+								include includes/medal.pug
+							.main-slider__feature-text Официальный дистрибьютор оригинального профиля в России
+						.main-slider__feature
+							.main-slider__feature-image
+								include includes/statistics.pug
+							.main-slider__feature-text Самый быстрый срок изготовления 4 недели
+						.main-slider__feature
+							.main-slider__feature-image
+								include includes/card.pug
+							.main-slider__feature-text Оплата по безналичному расчету
+						.main-slider__feature
+							.main-slider__feature-image
+								include includes/money.pug
+							.main-slider__feature-text Рассрочка
+
+		.description
+			.container
+				.description__wrapper
+					.description__block
+						.description__header
+							.description__logo
+								img(src="img/bksblue-logo.png")
+							.description__title Безрамная турецкая система
+						.description__features
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/check.svg")
+								.description__feature-text Вся продукция имеет фирменный логотип BKS
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/chain.svg")
+								.description__feature-text Стекла удивляют своей прочностью по сравнению с обычным стандартным остеклением
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/sheet.svg")
+								.description__feature-text Обеспечивает красивый панорамный вид, не создает теней и не закрывает пространство
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/drop.svg")
+								.description__feature-text Адаптация системы остекления под все виды погодных условий
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/heart.svg")
+								.description__feature-text Увеличивает ощущение пространства в помещении, хорошо пропускает свет, что благоприятно сказывается на здоровье и настроении
+						.description__subtitle 
+							span Подходит для:
+						.description__examples
+							.description__example
+								.description__example-image
+									img(src="img/examples/lodgiya.png")
+								.description__example-title Лоджии
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/terrasa.png")
+								.description__example-title Террасы
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/gost.png")
+								.description__example-title Гостиницы
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/cafe.png")
+								.description__example-title Кафе
+								a.description__example-link(href="#") Посмотреть
+						a.description__cost(href="#") Рассчитать стоимость
+
+					.description__block
+						.description__header
+							.description__logo
+								img(src="img/bksblue-logo.png")
+							.description__title Безрамная финская система
+						.description__features
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/thumbs-up.svg")
+								.description__feature-text Вся продукция имеет фирменный логотип BKS
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/setting.svg")
+								.description__feature-text Стекла удивляют своей прочностью по сравнению с обычным стандартным остеклением
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/Home.svg")
+								.description__feature-text Обеспечивает красивый панорамный вид, не создает теней и не закрывает пространство
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/drop.svg")
+								.description__feature-text Адаптация системы остекления под все виды погодных условий
+							.description__feature
+								.description__feature-icon
+									img(src="img/icons/headset.svg")
+								.description__feature-text Увеличивает ощущение пространства в помещении, хорошо пропускает свет, что благоприятно сказывается на здоровье и настроении
+						.description__subtitle 
+							span Подходит для:
+						.description__examples
+							.description__example
+								.description__example-image
+									img(src="img/examples/lodgiya.png")
+								.description__example-title Лоджии
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/terrasa.png")
+								.description__example-title Террасы
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/gost.png")
+								.description__example-title Гостиницы
+								a.description__example-link(href="#") Посмотреть
+							.description__example
+								.description__example-image
+									img(src="img/examples/cafe.png")
+								.description__example-title Кафе
+								a.description__example-link(href="#") Посмотреть
+						a.description__cost(href="#") Рассчитать стоимость								
+
+		.container
+			.gallery
+				.gallery__item
+					img(src="img/feedbacks/feedback-1.png")
+				.gallery__item
+					img(src="img/feedbacks/feedback-2.png")
+				.gallery__item
+					img(src="img/feedbacks/feedback-1.png")
+				.gallery__item
+					img(src="img/feedbacks/feedback-2.png")
+				.gallery__item
+					img(src="img/feedbacks/feedback-1.png")
+				.gallery__item
+					img(src="img/feedbacks/feedback-2.png")
+
+		.about-company
+			.container
+				.about-company__wrapper
+					.about-company__image
+						img(src="img/home.png")
+					.about-company__block
+						.about-company__logo
+							img(src="img/bksabout-logo.png")
+						.about-company__text Компания БКС давно зарекомендовала себя на рынке остекления как надежный и ответственный поставщик услуг в сфере систем безрамного остекления. Безрамные Конструкции Скандинавии занимаются остеклением с 2009 года на всей территории Российской Федерации, благодаря сотрудничеству с Финским заводом Jokke и Турецким BKS наша компания не имеет аналогов по срокам производства, монтажу и качеству поставляемой продукции. В России мы являемся единственным переработчиком оригинального профиля BKS, а также единственным дистрибьютором и официальным представителем Финского профиля Jokke на розничном рынке. Принципы нашей компании – это выполнение поставленных задач в срок и сохранение высокого уровня качества продукции. Мы гарантируем профессиональный и индивидуальный подход к каждому клиенту.
+
+		.feedbacks
+			.container
+				.wrapper
+					.feedback__wrapper
+						.feedback
+							.feedback__image
+								img(src="img/feedbacks/feedback-1.png")
+							.feedback__sign Договор 614 от 18.08.2015
+						.feedback
+							.feedback__image
+								img(src="img/feedbacks/feedback-2.png")
+							.feedback__sign Договор 614 от 18.08.2015
+						.feedback
+							.feedback__desc
+								.feedback__title Константин Александров
+								.feedback__subtitle директор вет. лаборатории
+								.feedback__text Мы довольны работой, все очень аккуратно, качественно и быстро. Большое спасибо!
+								a.feedback__readmore(href="#") Читать далее...
+							.feedback__sign Договор 614 от 18.08.2015
+						.feedback
+							.feedback__image
+								img(src="img/feedbacks/feedback-1.png")
+							.feedback__sign Договор 614 от 18.08.2015
+						.feedback
+							.feedback__image
+								img(src="img/feedbacks/feedback-2.png")
+							.feedback__sign Договор 614 от 18.08.2015
+
+		.certificates
+			.container
+				.certificates__title Сертификаты
+				.certificates__wrapper
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+					.certificates__item
+						img(src="img/certificate/sertificat1.jpg")
+	
+		.map
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=KBeJyit-Hj4uHOxySVGrIRpsaHIxpsx-&amp;width=100%25&amp;height=570px&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+			.container
+				.map__contacts
+					.map__contacts-title Офис
+					.map__contacts-adress 195625, г. Санкт-Петербург, Гражданский пр., 111
+					.map__contacts-phone +7 (812) 648-29-72
+					.map__contacts-email info@skat2004.ru
+					.map__triangle
+				.map__wrapper
+					.ask-cost
+						.ask-cost__title Узнайте стоимость остекления прямо сейчас!
+						form.ask-cost__form
+							label.ask-cost__label Ваше имя
+							input.ask-cost__input(type="text", placeholder="Имя")
+							label.ask-cost__label Ваш телефон
+							input.ask-cost__input(type="text", placeholder="+7(___)___-__-__")
+							label.ask-cost__label Ваш email
+							input.ask-cost__input(type="text", placeholder="email")
+							input.ask-cost__submit(type="submit", value="Отправить") 
+
+		footer.footer
+			.container
+				.footer__logo
+					img(src="img/bksfooter-logo.png")
+				.footer__copyright Все права защищены ООО"БКС" 2009-2017

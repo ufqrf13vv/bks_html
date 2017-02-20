@@ -1,0 +1,51 @@
+.header {
+	height: 80px;
+
+	@media @extrasmall {
+		height: 120px;
+		padding-bottom: 40px;
+	}
+
+	&__logo {
+		align-self: center;
+	}
+
+	&__logo > img {
+		width: 130px;
+		height: 60px;
+	}
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__contacts {
+		align-self: center;
+		padding-right: 20px;
+
+		@media @extrasmall {
+			padding: 0;
+			text-align: right;
+		}
+	}
+
+	&__contacts-adress {
+		color: #646464;
+		margin-bottom: 7px;
+		padding-left: 7px;
+	}
+
+	&__contacts-phone {
+		font-family: @fbold;
+		font-size: 18px;
+	}
+
+	&__contacts-phone i {
+		font-size: 20px;
+		font-weight: bold;
+		color: #145ee7;
+		margin-right: 14px;
+	}
+}

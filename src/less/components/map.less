@@ -1,0 +1,158 @@
+.map {
+	position: relative;
+	height: auto;
+
+
+	@media @extrasmall {
+		background: url('../img/bg-about.png') repeat 0 0;
+	}
+
+	&__contacts {
+		background: #ffffff;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+		border-radius: 2px;
+
+		position: absolute;
+		top: 75px;
+
+		@media @medium {
+			width: 350px;
+			padding: 27px 20px;
+			font-size: 18px;
+			line-height: 30px;
+		}
+
+		@media @small {
+			padding: 20px;
+			width: 270px;
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		@media @extrasmall {
+			padding: 20px;
+			width: 270px;
+			font-size: 15px;
+			line-height: 20px;
+		}
+
+		&-title {
+			font-family: @fbold;
+			font-size: 18px;
+		}
+
+		&-adress,
+		&-phone,
+		&-email {
+			padding-left: 25px;
+			position: relative;
+		}
+
+		&-adress::before {
+			content: '';
+
+			width: 20px;
+			height: 20px;
+			background: url('../img/icons/sprite.png') no-repeat 0 0;
+
+			position: absolute;
+			left: 0;
+
+			@media @medium {
+				top: 7px;
+			}
+
+			@media @small {
+				top: 2px;
+			}
+		}
+
+		&-phone::before {
+			content: '';
+
+			width: 20px;
+			height: 20px;
+			background: url('../img/icons/sprite.png') no-repeat 0 -23px;
+
+			position: absolute;
+			left: 0;
+
+			@media @medium {
+				top: 7px;
+			}
+
+			@media @small {
+				top: 2px;
+			}
+		}
+
+		&-email::before {
+			content: '';
+
+			width: 20px;
+			height: 20px;
+			background: url('../img/icons/sprite.png') no-repeat 0 -47px;
+
+			position: absolute;
+			left: 0;
+
+			@media @medium {
+				top: 7px;
+			}
+
+			@media @small {
+				top: 2px;
+			}
+		}
+	}
+
+	&__triangle {
+		position: relative;
+
+		&::after {
+			content: '';
+
+			width: 0;
+			height: 0;
+			border-left: 20px solid transparent;
+			border-right: 20px solid transparent;
+			border-top: 20px solid #fff;
+
+			position: absolute;
+			left: 10px;
+
+			@media @medium {
+				bottom: -47px;
+			}
+
+			@media @small {
+				bottom: -40px;
+			}
+
+			@media @extrasmall {
+				bottom: -40px;
+			}
+		}
+	}
+
+	&__wrapper {
+		position: absolute;
+		top: 0;
+		
+		@media @large {
+			width: @lg;
+		}
+
+		@media @medium {
+			width: @md;
+		}
+
+		@media @small {
+			width: @sm;
+		}
+
+		@media @extrasmall {
+			position: relative;
+		}
+	}
+}

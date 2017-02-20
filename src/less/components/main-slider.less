@@ -1,0 +1,93 @@
+.main-slider {
+	position: relative;
+
+	&__slide {
+		height: 438px;
+
+		background: url('../img/sliders/bg-1.png') no-repeat 0 0;
+		background-size: cover;
+		color: #ffffff;
+	}
+
+	&__logo {
+		margin-top: 35px;
+		margin-bottom: 10px;
+	}
+	
+	&__title {
+		width: 480px;
+
+		font-family: @fbold;
+		font-size: 36px;
+		line-height: 48px;
+
+		text-transform: capitalize;
+
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		width: 480px;
+
+		font-size: 17px;
+		line-height: 28px;
+	}
+
+	&__image {
+		position: absolute;
+		bottom: 0;
+
+		@media @large {
+			width: 1180px;
+		}
+
+		@media @medium {
+			width: 970px;
+		}
+
+		& > img {
+			margin-left: auto;
+		}
+	}
+
+	&__features {
+		display: flex;
+
+		position: absolute;
+		bottom: 10px;
+	}
+
+	&__feature {
+		display: flex;
+		flex-direction: column;
+
+		width: 90px;
+		margin-right: 30px;
+		color: #fff;
+
+		&-image {
+			display: flex;
+			align-self: center;
+
+			width: 84px;
+			height: 84px;
+
+			background: #145ee7;
+			border-radius: 50%;
+
+			margin-bottom: 20px;
+
+			& > svg {
+				margin: auto;
+			}
+		}
+
+		&-text {
+			font-family: @fsemibold;
+			font-size: 10px;
+
+			text-align: center;
+			text-transform: uppercase;
+		}
+	}
+}
